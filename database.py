@@ -18,7 +18,7 @@ class Database:
         """)
         self.conn.commit() #Confirma a transição, salvar as alterações feiras no banco de dados 
 
-    def insert_post(self, post, category, score, active ):
+    def insert_post(self, post, category,active, score):
         self.cursor.execute("INSERT INTO twitter (post, category, active, score) VALUES(?, ?, ?, ?)", (post, category, active, score))
         self.conn.commit()
 
