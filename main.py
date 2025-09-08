@@ -5,6 +5,8 @@ from sentiment_analysis_score import analyze_sentiment_score
 def main():
     db = Database('twitter3.db')
 
+
+#========================== TEXTO DO Tweet =========================================
     text = "Hate"
 
     analisepost =  analyze_sentiment(text)
@@ -16,7 +18,7 @@ def main():
 
 
 #========================== Inserir Tweet =========================================
-#    db.insert_post(text, analisepost, active, analyze_sentiment_score(text))
+    db.insert_post(text, analisepost, active, analyze_sentiment_score(text))
 
 
 
